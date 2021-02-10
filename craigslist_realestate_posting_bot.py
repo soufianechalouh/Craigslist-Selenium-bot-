@@ -36,7 +36,7 @@ browser.find_element_by_xpath('//input[@name="id" and @value="143"]').click()
 title_area = browser.find_element_by_xpath('//input[@name="PostingTitle" and @id="PostingTitle"]')
 title_area.send_keys('Amazing 5 bedroom lakefront home')
 
-city = browser.find_element_by_xpath('//input[@name="GeographicArea" and @id="GeographicArea"]')
+city = browser.find_element_by_xpath('//input[@name="geographic_area" and @id="geographic_area"]')
 city.send_keys('Austin, TX')
 
 postal_code = browser.find_element_by_xpath('//input[@name="postal" and @id="postal_code"]')
@@ -64,7 +64,7 @@ main_text.send_keys("Please inquire at 307-800-1769")
 price = browser.find_element_by_xpath('//input[@name="price"]')
 price.send_keys(450_000)
 
-sqft = browser.find_element_by_xpath('//input[@name="Sqft"]')
+sqft = browser.find_element_by_xpath('//input[@name="surface_area"]')
 sqft.send_keys(6_200)
 
 house_type = browser.find_element_by_xpath('//span[@id="ui-id-1-button"]').click()
